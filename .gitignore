@@ -1,0 +1,54 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Captured prompts and classifier output
+captures/
+
+# Probe runtime state. Keep only the reviewed, secret-free Codex config.
+capture/codex_probe_home/*
+!capture/codex_probe_home/config.toml
+capture/trae_probe_data/
+
+# Runtime databases, journals, logs, and temporary files
+*.sqlite
+*.sqlite-*
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# IDE and OS metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+

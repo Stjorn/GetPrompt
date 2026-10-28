@@ -1,0 +1,14 @@
+# Codex 探针配置 — 用法:
+#   $env:CODEX_HOME = "F:\Work\capture\codex_probe_home"
+#   $env:PROBE_KEY  = "<Higress网关key>"
+#   & "<桌面版自带的codex.exe>" exec --skip-git-repo-check "reply with just: ok"
+# 与 ~/.codex(桌面版正在使用的真实环境)完全隔离,互不影响。
+
+model = "glm-4-flash"
+model_provider = "probe"
+
+[model_providers.probe]
+name = "guardrail probe"
+base_url = "http://127.0.0.1:8099/v1"
+wire_api = "responses"
+env_key = "PROBE_KEY"
